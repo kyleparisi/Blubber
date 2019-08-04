@@ -16,6 +16,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        zts_start(NSHomeDirectory(), { (msg: UnsafeMutablePointer<zts_callback_msg>?) -> Void in
+            let network = "8056c2e21c41c161"
+            let nwid = strtoull(network, nil, 16)
+            print(nwid)
+            let eventCode = msg?.pointee.eventCode ?? 0
+            let node = msg?.pointee.node
+            switch eventCode {
+            case ZTS_EVENT_NODE_UP:
+                print("ZTS_EVENT_NODE_UP")
+            case ZTS_EVENT_STACK_UP:
+                print("ZTS_EVENT_STACK_UP")
+            case ZTS_EVENT_NODE_ONLINE:
+                print("ZTS_EVENT_NODE_ONLINE, address=", node?.pointee.address ?? "")
+                zts_join(nwid)
+            case ZTS_EVENT_NODE_OFFLINE:
+                print("ZTS_EVENT_NODE_OFFLINE")
+            case ZTS_EVENT_NODE_DOWN:
+                print("ZTS_EVENT_NODE_DOWN")
+            case ZTS_EVENT_NODE_IDENTITY_COLLISION:
+                print("ZTS_EVENT_NODE_IDENTITY_COLLISION")
+            case ZTS_EVENT_NODE_UNRECOVERABLE_ERROR:
+                print("ZTS_EVENT_NODE_UNRECOVERABLE_ERROR")
+            case ZTS_EVENT_NODE_NORMAL_TERMINATION:
+                print("ZTS_EVENT_NODE_NORMAL_TERMINATION")
+            case ZTS_EVENT_PEER_P2P:
+                print("ZTS_EVENT_PEER_P2P")
+            case ZTS_EVENT_PEER_RELAY:
+                print("ZTS_EVENT_PEER_RELAY")
+            default:
+                print("Event", eventCode)
+            }
+        }, 9994)
         return true
     }
 
@@ -40,7 +73,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 

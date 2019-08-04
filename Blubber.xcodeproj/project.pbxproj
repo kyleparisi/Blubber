@@ -12,6 +12,7 @@
 		C03DCBC222CD723B00CAED74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C03DCBC022CD723B00CAED74 /* Main.storyboard */; };
 		C03DCBC422CD723C00CAED74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C03DCBC322CD723C00CAED74 /* Assets.xcassets */; };
 		C03DCBC722CD723C00CAED74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C03DCBC522CD723C00CAED74 /* LaunchScreen.storyboard */; };
+		C03DCBD422CD728000CAED74 /* zt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03DCBD322CD728000CAED74 /* zt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C03DCBC322CD723C00CAED74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C03DCBC622CD723C00CAED74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C03DCBC822CD723C00CAED74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C03DCBD322CD728000CAED74 /* zt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = zt.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C03DCBD422CD728000CAED74 /* zt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				C03DCBBB22CD723B00CAED74 /* Blubber */,
 				C03DCBBA22CD723B00CAED74 /* Products */,
+				C03DCBD022CD726900CAED74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				C03DCBC822CD723C00CAED74 /* Info.plist */,
 			);
 			path = Blubber;
+			sourceTree = "<group>";
+		};
+		C03DCBD022CD726900CAED74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C03DCBD322CD728000CAED74 /* zt.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,13 +296,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 63GMD6U4J2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Blubber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = io.te0.Blubber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/kyleparisi/Blubber/zt.framework/Headers/ZeroTier.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,13 +321,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 63GMD6U4J2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Blubber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = io.te0.Blubber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/kyleparisi/Blubber/zt.framework/Headers/ZeroTier.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
