@@ -7,23 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C00982292440B3D600DE1662 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00982282440B3D600DE1662 /* ViewController.swift */; };
 		C03DCBBD22CD723B00CAED74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DCBBC22CD723B00CAED74 /* AppDelegate.swift */; };
-		C03DCBBF22CD723B00CAED74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DCBBE22CD723B00CAED74 /* ViewController.swift */; };
-		C03DCBC222CD723B00CAED74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C03DCBC022CD723B00CAED74 /* Main.storyboard */; };
 		C03DCBC422CD723C00CAED74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C03DCBC322CD723C00CAED74 /* Assets.xcassets */; };
 		C03DCBC722CD723C00CAED74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C03DCBC522CD723C00CAED74 /* LaunchScreen.storyboard */; };
-		C03DCBD422CD728000CAED74 /* zt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03DCBD322CD728000CAED74 /* zt.framework */; };
+		C0C78E2C240BFBF700DA1841 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C78E2B240BFBF700DA1841 /* Main.storyboard */; };
+		C0C78E2E240C036700DA1841 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C78E2D240C036700DA1841 /* Objects.swift */; };
+		C0FE85012470D09C00E6B69F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FE85002470D09C00E6B69F /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C00982282440B3D600DE1662 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C03DCBB922CD723B00CAED74 /* Blubber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blubber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C03DCBBC22CD723B00CAED74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C03DCBBE22CD723B00CAED74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C03DCBC122CD723B00CAED74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C03DCBC322CD723C00CAED74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C03DCBC622CD723C00CAED74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C03DCBC822CD723C00CAED74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C03DCBD322CD728000CAED74 /* zt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = zt.framework; sourceTree = "<group>"; };
+		C0C78E2B240BFBF700DA1841 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C0C78E2D240C036700DA1841 /* Objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objects.swift; sourceTree = "<group>"; };
+		C0FE85002470D09C00E6B69F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C03DCBD422CD728000CAED74 /* zt.framework in Frameworks */,
+				C0FE85012470D09C00E6B69F /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,11 +62,12 @@
 			isa = PBXGroup;
 			children = (
 				C03DCBBC22CD723B00CAED74 /* AppDelegate.swift */,
-				C03DCBBE22CD723B00CAED74 /* ViewController.swift */,
-				C03DCBC022CD723B00CAED74 /* Main.storyboard */,
+				C0C78E2D240C036700DA1841 /* Objects.swift */,
+				C0C78E2B240BFBF700DA1841 /* Main.storyboard */,
 				C03DCBC322CD723C00CAED74 /* Assets.xcassets */,
 				C03DCBC522CD723C00CAED74 /* LaunchScreen.storyboard */,
 				C03DCBC822CD723C00CAED74 /* Info.plist */,
+				C00982282440B3D600DE1662 /* ViewController.swift */,
 			);
 			path = Blubber;
 			sourceTree = "<group>";
@@ -71,6 +75,7 @@
 		C03DCBD022CD726900CAED74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C0FE85002470D09C00E6B69F /* WebKit.framework */,
 				C03DCBD322CD728000CAED74 /* zt.framework */,
 			);
 			name = Frameworks;
@@ -134,9 +139,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0C78E2C240BFBF700DA1841 /* Main.storyboard in Resources */,
 				C03DCBC722CD723C00CAED74 /* LaunchScreen.storyboard in Resources */,
 				C03DCBC422CD723C00CAED74 /* Assets.xcassets in Resources */,
-				C03DCBC222CD723B00CAED74 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C03DCBBF22CD723B00CAED74 /* ViewController.swift in Sources */,
+				C00982292440B3D600DE1662 /* ViewController.swift in Sources */,
+				C0C78E2E240C036700DA1841 /* Objects.swift in Sources */,
 				C03DCBBD22CD723B00CAED74 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,14 +161,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C03DCBC022CD723B00CAED74 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C03DCBC122CD723B00CAED74 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C03DCBC522CD723C00CAED74 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -225,7 +223,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -280,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -302,6 +300,7 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Blubber/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,6 +326,7 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = Blubber/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
